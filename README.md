@@ -16,6 +16,9 @@ Acesse o [Figma do Jornada Milhas](https://www.figma.com/file/yz38uH9MvA69Ub3FxN
 ## ✔️ Técnicas e tecnologias utilizadas
 
 - `Angular`
+Instalar o angular 
+npm install -g @angular/cli
+
 - `Playwright`
 
 ## 🛠️ Abrir e rodar o projeto
