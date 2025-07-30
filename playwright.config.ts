@@ -24,7 +24,7 @@ export default defineConfig({
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
 
   reporter:
-  [ ['list'],
+  [ ['dot'],
     ['html', { outputFolder: 'playwright-report' }],
     ['json', { outputFile: `test/results-e2e/results-${getTimestamp()}.json` }],
     ['junit', { outputFile: `test/results-e2e/results-${getTimestamp()}.xml` }],
@@ -56,15 +56,16 @@ export default defineConfig({
       use: { ...devices['Desktop Safari'] },
     },
 
-    /* Test against mobile viewports. */
-    // {
-    //   name: 'Mobile Chrome',
-    //   use: { ...devices['Pixel 5'] },
-    // },
-    // {
-    //   name: 'Mobile Safari',
-    //   use: { ...devices['iPhone 12'] },
-    // },
+    
+    {
+      name: 'Mobile Chrome',
+      use: { ...devices['Pixel 5'] },
+    },
+
+    {
+       name: 'Mobile Safari',
+       use: { ...devices['iPhone 12'] },
+    },
 
     /* Test against branded browsers. */
     // {
