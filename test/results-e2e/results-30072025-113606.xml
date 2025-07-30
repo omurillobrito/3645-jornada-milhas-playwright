@@ -1,0 +1,219 @@
+<testsuites id="" name="" tests="10" failures="10" skipped="0" errors="0" time="15.038448">
+<testsuite name="teste.spec.ts" timestamp="2025-07-30T14:36:06.167Z" hostname="chromium" tests="2" failures="2" skipped="0" time="5.916" errors="0">
+<testcase name="Logo da Pagina" classname="teste.spec.ts" time="2.959">
+<failure message="teste.spec.ts:4:5 Logo da Pagina" type="FAILURE">
+<![CDATA[  [chromium] › teste.spec.ts:4:5 › Logo da Pagina ──────────────────────────────────────────────────
+
+    Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:4200/
+    Call log:
+      - navigating to "http://localhost:4200/", waiting until "load"
+
+
+      3 |
+      4 | test('Logo da Pagina', async ({ page }) => {
+    > 5 |   await page.goto('http://localhost:4200');
+        |              ^
+      6 |   const logo = page.getByRole('link', { name: 'Logo da aplicação Jornada' });
+      7 |
+      8 |   await expect(logo).toBeVisible();
+        at C:\Users\User\Documents\Projetos\3645-jornada-milhas-playwright\e2e\teste.spec.ts:5:14
+]]>
+</failure>
+</testcase>
+<testcase name="Botão de Login" classname="teste.spec.ts" time="2.957">
+<failure message="teste.spec.ts:11:5 Botão de Login" type="FAILURE">
+<![CDATA[  [chromium] › teste.spec.ts:11:5 › Botão de Login ─────────────────────────────────────────────────
+
+    Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:4200/
+    Call log:
+      - navigating to "http://localhost:4200/", waiting until "load"
+
+
+      10 |
+      11 | test('Botão de Login', async ({ page }) => {
+    > 12 |   await page.goto('http://localhost:4200');
+         |              ^
+      13 |   const loginBotao= page.getByTestId('botao-login')
+      14 |
+      15 |   await expect(loginBotao).toBeVisible();
+        at C:\Users\User\Documents\Projetos\3645-jornada-milhas-playwright\e2e\teste.spec.ts:12:14
+]]>
+</failure>
+</testcase>
+</testsuite>
+<testsuite name="teste.spec.ts" timestamp="2025-07-30T14:36:06.167Z" hostname="firefox" tests="2" failures="2" skipped="0" time="7.199" errors="0">
+<testcase name="Logo da Pagina" classname="teste.spec.ts" time="3.61">
+<failure message="teste.spec.ts:4:5 Logo da Pagina" type="FAILURE">
+<![CDATA[  [firefox] › teste.spec.ts:4:5 › Logo da Pagina ───────────────────────────────────────────────────
+
+    Error: page.goto: NS_ERROR_CONNECTION_REFUSED
+    Call log:
+      - navigating to "http://localhost:4200/", waiting until "load"
+
+
+      3 |
+      4 | test('Logo da Pagina', async ({ page }) => {
+    > 5 |   await page.goto('http://localhost:4200');
+        |              ^
+      6 |   const logo = page.getByRole('link', { name: 'Logo da aplicação Jornada' });
+      7 |
+      8 |   await expect(logo).toBeVisible();
+        at C:\Users\User\Documents\Projetos\3645-jornada-milhas-playwright\e2e\teste.spec.ts:5:14
+
+    Error Context: ..\test-results\teste-Logo-da-Pagina-firefox\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\..\test-results\teste-Logo-da-Pagina-firefox\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Botão de Login" classname="teste.spec.ts" time="3.589">
+<failure message="teste.spec.ts:11:5 Botão de Login" type="FAILURE">
+<![CDATA[  [firefox] › teste.spec.ts:11:5 › Botão de Login ──────────────────────────────────────────────────
+
+    Error: page.goto: NS_ERROR_CONNECTION_REFUSED
+    Call log:
+      - navigating to "http://localhost:4200/", waiting until "load"
+
+
+      10 |
+      11 | test('Botão de Login', async ({ page }) => {
+    > 12 |   await page.goto('http://localhost:4200');
+         |              ^
+      13 |   const loginBotao= page.getByTestId('botao-login')
+      14 |
+      15 |   await expect(loginBotao).toBeVisible();
+        at C:\Users\User\Documents\Projetos\3645-jornada-milhas-playwright\e2e\teste.spec.ts:12:14
+]]>
+</failure>
+</testcase>
+</testsuite>
+<testsuite name="teste.spec.ts" timestamp="2025-07-30T14:36:06.167Z" hostname="webkit" tests="2" failures="2" skipped="0" time="6.234" errors="0">
+<testcase name="Logo da Pagina" classname="teste.spec.ts" time="3.117">
+<failure message="teste.spec.ts:4:5 Logo da Pagina" type="FAILURE">
+<![CDATA[  [webkit] › teste.spec.ts:4:5 › Logo da Pagina ────────────────────────────────────────────────────
+
+    Error: page.goto: Could not connect to server
+    Call log:
+      - navigating to "http://localhost:4200/", waiting until "load"
+
+
+      3 |
+      4 | test('Logo da Pagina', async ({ page }) => {
+    > 5 |   await page.goto('http://localhost:4200');
+        |              ^
+      6 |   const logo = page.getByRole('link', { name: 'Logo da aplicação Jornada' });
+      7 |
+      8 |   await expect(logo).toBeVisible();
+        at C:\Users\User\Documents\Projetos\3645-jornada-milhas-playwright\e2e\teste.spec.ts:5:14
+]]>
+</failure>
+</testcase>
+<testcase name="Botão de Login" classname="teste.spec.ts" time="3.117">
+<failure message="teste.spec.ts:11:5 Botão de Login" type="FAILURE">
+<![CDATA[  [webkit] › teste.spec.ts:11:5 › Botão de Login ───────────────────────────────────────────────────
+
+    Error: page.goto: Could not connect to server
+    Call log:
+      - navigating to "http://localhost:4200/", waiting until "load"
+
+
+      10 |
+      11 | test('Botão de Login', async ({ page }) => {
+    > 12 |   await page.goto('http://localhost:4200');
+         |              ^
+      13 |   const loginBotao= page.getByTestId('botao-login')
+      14 |
+      15 |   await expect(loginBotao).toBeVisible();
+        at C:\Users\User\Documents\Projetos\3645-jornada-milhas-playwright\e2e\teste.spec.ts:12:14
+]]>
+</failure>
+</testcase>
+</testsuite>
+<testsuite name="teste.spec.ts" timestamp="2025-07-30T14:36:06.167Z" hostname="Mobile Chrome" tests="2" failures="2" skipped="0" time="5.139" errors="0">
+<testcase name="Logo da Pagina" classname="teste.spec.ts" time="2.572">
+<failure message="teste.spec.ts:4:5 Logo da Pagina" type="FAILURE">
+<![CDATA[  [Mobile Chrome] › teste.spec.ts:4:5 › Logo da Pagina ─────────────────────────────────────────────
+
+    Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:4200/
+    Call log:
+      - navigating to "http://localhost:4200/", waiting until "load"
+
+
+      3 |
+      4 | test('Logo da Pagina', async ({ page }) => {
+    > 5 |   await page.goto('http://localhost:4200');
+        |              ^
+      6 |   const logo = page.getByRole('link', { name: 'Logo da aplicação Jornada' });
+      7 |
+      8 |   await expect(logo).toBeVisible();
+        at C:\Users\User\Documents\Projetos\3645-jornada-milhas-playwright\e2e\teste.spec.ts:5:14
+]]>
+</failure>
+</testcase>
+<testcase name="Botão de Login" classname="teste.spec.ts" time="2.567">
+<failure message="teste.spec.ts:11:5 Botão de Login" type="FAILURE">
+<![CDATA[  [Mobile Chrome] › teste.spec.ts:11:5 › Botão de Login ────────────────────────────────────────────
+
+    Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:4200/
+    Call log:
+      - navigating to "http://localhost:4200/", waiting until "load"
+
+
+      10 |
+      11 | test('Botão de Login', async ({ page }) => {
+    > 12 |   await page.goto('http://localhost:4200');
+         |              ^
+      13 |   const loginBotao= page.getByTestId('botao-login')
+      14 |
+      15 |   await expect(loginBotao).toBeVisible();
+        at C:\Users\User\Documents\Projetos\3645-jornada-milhas-playwright\e2e\teste.spec.ts:12:14
+]]>
+</failure>
+</testcase>
+</testsuite>
+<testsuite name="teste.spec.ts" timestamp="2025-07-30T14:36:06.167Z" hostname="Mobile Safari" tests="2" failures="2" skipped="0" time="5.186" errors="0">
+<testcase name="Logo da Pagina" classname="teste.spec.ts" time="2.585">
+<failure message="teste.spec.ts:4:5 Logo da Pagina" type="FAILURE">
+<![CDATA[  [Mobile Safari] › teste.spec.ts:4:5 › Logo da Pagina ─────────────────────────────────────────────
+
+    Error: page.goto: Could not connect to server
+    Call log:
+      - navigating to "http://localhost:4200/", waiting until "load"
+
+
+      3 |
+      4 | test('Logo da Pagina', async ({ page }) => {
+    > 5 |   await page.goto('http://localhost:4200');
+        |              ^
+      6 |   const logo = page.getByRole('link', { name: 'Logo da aplicação Jornada' });
+      7 |
+      8 |   await expect(logo).toBeVisible();
+        at C:\Users\User\Documents\Projetos\3645-jornada-milhas-playwright\e2e\teste.spec.ts:5:14
+]]>
+</failure>
+</testcase>
+<testcase name="Botão de Login" classname="teste.spec.ts" time="2.601">
+<failure message="teste.spec.ts:11:5 Botão de Login" type="FAILURE">
+<![CDATA[  [Mobile Safari] › teste.spec.ts:11:5 › Botão de Login ────────────────────────────────────────────
+
+    Error: page.goto: Could not connect to server
+    Call log:
+      - navigating to "http://localhost:4200/", waiting until "load"
+
+
+      10 |
+      11 | test('Botão de Login', async ({ page }) => {
+    > 12 |   await page.goto('http://localhost:4200');
+         |              ^
+      13 |   const loginBotao= page.getByTestId('botao-login')
+      14 |
+      15 |   await expect(loginBotao).toBeVisible();
+        at C:\Users\User\Documents\Projetos\3645-jornada-milhas-playwright\e2e\teste.spec.ts:12:14
+]]>
+</failure>
+</testcase>
+</testsuite>
+</testsuites>

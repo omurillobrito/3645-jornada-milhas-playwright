@@ -1,0 +1,29 @@
+<testsuites id="" name="" tests="3" failures="0" skipped="0" errors="0" time="37.984758">
+<testsuite name="teste.spec.ts" timestamp="2025-07-30T16:47:05.600Z" hostname="chromium" tests="1" failures="0" skipped="0" time="10.83" errors="0">
+<testcase name="Botão de Login" classname="teste.spec.ts" time="10.83">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\..\test-results\teste-Botão-de-Login-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="teste.spec.ts" timestamp="2025-07-30T16:47:05.600Z" hostname="firefox" tests="1" failures="0" skipped="0" time="11.534" errors="0">
+<testcase name="Botão de Login" classname="teste.spec.ts" time="11.534">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\..\test-results\teste-Botão-de-Login-firefox\trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="teste.spec.ts" timestamp="2025-07-30T16:47:05.600Z" hostname="webkit" tests="1" failures="0" skipped="0" time="13.167" errors="0">
+<testcase name="Botão de Login" classname="teste.spec.ts" time="13.167">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\..\test-results\teste-Botão-de-Login-webkit\trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>
